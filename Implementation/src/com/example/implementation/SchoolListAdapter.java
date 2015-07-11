@@ -1,13 +1,15 @@
 package com.example.implementation;
 
-import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class SchoolListAdapter extends BaseAdapter{
 
-	public SchoolListAdapter(Context context,String[] names,int[] budgets,int[] spents,String[] locations,){}
+	private static LayoutInflater inflater=null;
+	public SchoolListAdapter(HomeActivity mainactivity,String[] names,int[] budgets,int[] spents,String[] locations,String[] imagePaths){
+		
+	}
 	
 	@Override
 	public int getCount() {
