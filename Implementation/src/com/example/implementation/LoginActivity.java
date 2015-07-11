@@ -35,13 +35,14 @@ public class LoginActivity extends Activity {
 		
 		@Override
 		public void onClick(View v) {
+			
 			String username = txtUsername.getText().toString();
 			String password = txtPassword.getText().toString();
 			
 			Map<String,String> params = new HashMap<String,String>();
 			params.put("username", username);
 			params.put("password", password);
-			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"",params,new Response.Listener<JSONObject>() {
+			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"http://10.242.166.118/login.php",params,new Response.Listener<JSONObject>() {
 
 				@Override
 				public void onResponse(JSONObject response) {
@@ -49,7 +50,7 @@ public class LoginActivity extends Activity {
 					try {
 						int s =response.getInt("status");
 					if(s!=0){
-						Toast.makeText(getApplicationContext(), "Success",Toast.LENGTH_SHORT).show();
+						Toast.makeText(getApplicationContext(), "Redirect to home",Toast.LENGTH_SHORT).show();
 					}
 						
 					} catch (JSONException e) {

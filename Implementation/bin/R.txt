@@ -3,7 +3,8 @@ int id btnSign 0x7f060003
 int id btnSignup 0x7f060002
 int id txtPassword 0x7f060001
 int id txtUsername 0x7f060000
-int layout login 0x7f030000
+int layout home_activity 0x7f030000
+int layout login 0x7f030001
 int string app_name 0x7f040000
 int string hello_world 0x7f040001
 int style AppBaseTheme 0x7f050000
