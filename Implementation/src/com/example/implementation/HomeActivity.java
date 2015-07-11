@@ -17,7 +17,7 @@ public class HomeActivity extends Activity {
 		
 		listView = (ListView)findViewById(R.id.lstSchools);
 		
-		String []values = {
+		String [] school_names = {
 			"School 1",
 			"School 2",
 			"School 3",
@@ -33,7 +33,7 @@ public class HomeActivity extends Activity {
         // Third parameter - ID of the TextView to which the data is written
         // Forth - the Array of data
 		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.school_list_item,R.id.txtSchoolName,values);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.school_list_item,R.id.txtSchoolName,school_names);
 		listView.setAdapter(adapter);
 		
 	}
