@@ -1,6 +1,7 @@
 package com.example.implementation;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,6 +26,10 @@ public class HomeActivity extends Activity {
 			"School 5",
 			"School 6"
 		};
+		String[] image_links={"","","","","",""};
+		String[] locations={"Mumbai","Pune","London","Delhi","Banglore","Hydrabad"};
+		int[] budgets={20000,15000,10000,12000,13000,18000};
+		int[] spents={20000,15000,10000,12000,13000,18000};
 		
 
         // Define a new Adapter
@@ -33,7 +38,7 @@ public class HomeActivity extends Activity {
         // Third parameter - ID of the TextView to which the data is written
         // Forth - the Array of data
 		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.school_list_item,R.id.txtSchoolName,school_names);
+		SchoolListAdapter adapter = new SchoolListAdapter(this,school_names,image_links,locations,budgets,spents);
 		listView.setAdapter(adapter);
 		
 	}

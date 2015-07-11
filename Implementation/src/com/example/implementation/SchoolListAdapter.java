@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SchoolListAdapter extends BaseAdapter{
 
@@ -57,7 +58,7 @@ public class SchoolListAdapter extends BaseAdapter{
 	}
 	
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(final int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
 		
 		View rootView = inflater.inflate(R.layout.school_list_item,null);
@@ -72,7 +73,15 @@ public class SchoolListAdapter extends BaseAdapter{
 		h.txtlocation.setText(locations[position]);
 		//h.imageView.setImageBitmap(bm);
 		
-		return null;
+		rootView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+			Toast.makeText(context, "You Clicked "+names[position], Toast.LENGTH_SHORT).show();	
+			}
+		});
+		return rootView;
 	}
 	
 
