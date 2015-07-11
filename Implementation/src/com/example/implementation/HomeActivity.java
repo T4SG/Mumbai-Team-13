@@ -4,13 +4,38 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class HomeActivity extends Activity {
 
+	ListView listView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		
+		listView = (ListView)findViewById(R.id.lstSchools);
+		
+		String []values = {
+			"School 1",
+			"School 2",
+			"School 3",
+			"School 4",
+			"School 5",
+			"School 6"
+		};
+		
+
+        // Define a new Adapter
+        // First parameter - Context
+        // Second parameter - Layout for the row
+        // Third parameter - ID of the TextView to which the data is written
+        // Forth - the Array of data
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.school_list_item,R.id.txtSchoolName,values);
+		listView.setAdapter(adapter);
+		
 	}
 
 	@Override
