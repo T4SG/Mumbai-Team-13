@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+   android:layout_width="wrap_content"
+    android:layout_marginLeft="40dp"
+     android:layout_marginTop="25dp"
+     android:layout_marginRight="15dp"
+     android:layout_height="fill_parent"
+     >
+
+    <!-- 3 columns -->
+
+ <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tvhead"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="40dp"
+                 android:text="Phase"
+                 android:textStyle="bold" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <TextView
+            android:id="@+id/ethead"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:text="% Completed"
+          	android:textStyle="bold"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    
+      
+        
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+      
+      <TableRow
+        android:layout_width="wrap_content"
+          android:layout_height="200dp"
+          android:background="@drawable/border"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+                 android:text="Site preparation" />
+         <!--   android:layout_weight="1"-->
+       
+
+        <EditText
+            android:id="@+id/et6"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+          	 android:layout_marginRight="20dp"
+          	android:layout_marginLeft="20dp"
+          	android:hint="%"
+             />
+             <!--   android:layout_weight="1"-->
+       
+
+        
+    </TableRow>
+      
+    </TableLayout>

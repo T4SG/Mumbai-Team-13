@@ -13,16 +13,14 @@ public class SchoolListAdapter extends BaseAdapter{
 
 	Context context;
 	String[] names;
-	String[] image_links;
 	String[] locations;
 	int[] budgets;
 	int[] spents;
 	
 	private static LayoutInflater inflater=null;
-	public SchoolListAdapter(HomeActivity mainactivity,String[] names,int[] budgets,int[] spents,String[] locations,String[] imagePaths){
+	public SchoolListAdapter(HomeActivity mainactivity,String[] names,int[] budgets,int[] spents,String[] locations){
 		this.context = mainactivity.getBaseContext();
 		this.names = names;
-		this.image_links = imagePaths;
 		this.locations = locations;
 		this.budgets = budgets;
 		this.spents = spents;
@@ -53,8 +51,8 @@ public class SchoolListAdapter extends BaseAdapter{
 		TextView txtname;
 		TextView txtlocation;
 		TextView txtbudget;
-		TextView txtspent;
-		ImageView imageView;
+		TextView txtSchoolSpent;
+		
 	}
 	
 	@Override
@@ -66,12 +64,13 @@ public class SchoolListAdapter extends BaseAdapter{
 		h.txtname = (TextView) rootView.findViewById(R.id.txtSchoolName);
 		h.txtlocation = (TextView) rootView.findViewById(R.id.txtLocation);
 		h.txtbudget = (TextView) rootView.findViewById(R.id.txtBudget);
-		h.txtspent = (TextView) rootView.findViewById(R.id.txtSpent);
+		h.txtSchoolSpent = (TextView) rootView.findViewById(R.id.txtSpent);
 		
-		h.txtbudget.setText(budgets[position]);
+		h.txtbudget.setText("budget: "+budgets[position]);
 		h.txtname.setText(names[position]);
 		h.txtlocation.setText(locations[position]);
-		//h.imageView.setImageBitmap(bm);
+		h.txtSchoolSpent.setText("spent: "+spents[position]);
+		
 		
 		rootView.setOnClickListener(new View.OnClickListener() {
 			
@@ -83,7 +82,5 @@ public class SchoolListAdapter extends BaseAdapter{
 		});
 		return rootView;
 	}
-	
-
 	
 }

@@ -26,25 +26,47 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int bg_card=0x7f020000;
+        public static final int border=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int rectangle=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000a;
-        public static final int btnSign=0x7f090004;
-        public static final int btnSignup=0x7f090003;
-        public static final int imgSchool=0x7f090009;
+        public static final int action_settings=0x7f09001b;
+        public static final int btnSign=0x7f090016;
+        public static final int btnSignup=0x7f090015;
+        public static final int et=0x7f090006;
+        public static final int et1=0x7f090008;
+        public static final int et2=0x7f09000a;
+        public static final int et3=0x7f09000c;
+        public static final int et4=0x7f09000e;
+        public static final int et5=0x7f090010;
+        public static final int et6=0x7f090012;
+        public static final int ethead=0x7f090004;
         public static final int lstSchools=0x7f090000;
-        public static final int txtBudget=0x7f090007;
-        public static final int txtLocation=0x7f090006;
-        public static final int txtPassword=0x7f090002;
-        public static final int txtSchoolName=0x7f090005;
-        public static final int txtSpent=0x7f090008;
-        public static final int txtUsername=0x7f090001;
+        public static final int pager=0x7f090001;
+        public static final int tableLayout1=0x7f090002;
+        public static final int tv=0x7f090005;
+        public static final int tv1=0x7f090007;
+        public static final int tv2=0x7f090009;
+        public static final int tv3=0x7f09000b;
+        public static final int tv4=0x7f09000d;
+        public static final int tv5=0x7f09000f;
+        public static final int tv6=0x7f090011;
+        public static final int tvhead=0x7f090003;
+        public static final int txtBudget=0x7f090019;
+        public static final int txtLocation=0x7f090018;
+        public static final int txtPassword=0x7f090014;
+        public static final int txtSchoolName=0x7f090017;
+        public static final int txtSpent=0x7f09001a;
+        public static final int txtUsername=0x7f090013;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
-        public static final int login=0x7f030001;
-        public static final int school_list_item=0x7f030002;
+        public static final int activity_restaurant=0x7f030001;
+        public static final int activity_update=0x7f030002;
+        public static final int login=0x7f030003;
+        public static final int school_list_item=0x7f030004;
     }
     public static final class menu {
         public static final int home=0x7f080000;
