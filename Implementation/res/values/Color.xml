@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color android:name="location color">#6200ea</color>    
-</resources>
+    <item name="locationColor" type="color">#6200ea</item>
+    <item name="amount" type="color">f44336</item>
+</resources>    
+

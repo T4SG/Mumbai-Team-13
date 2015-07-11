@@ -11,29 +11,37 @@
         android:text="Name"
         android:textColor="#000000"
         android:textSize="24dp" />
+	
+    <TextView android:id="@+id/txtLocation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Mumbai"
+	    android:textColor="@color/locationColor"
+	    android:layout_below="@+id/txtSchoolName"/>
+	
 	<TextView
 	    android:layout_marginTop="5dp" 
 	    android:id="@+id/txtBudget"
+	    android:textColor="@color/amount"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:text="$24000"
-	    android:layout_below="@+id/txtSchoolName"
-	    android:textColor="#000000"
+	    android:text="Budget: $24000"
+	    android:layout_below="@+id/txtLocation"
         android:textSize="16dp" ></TextView>
-
+	
 		<TextView
 	    android:layout_marginTop="5dp" 
 	    android:id="@+id/txtSpent"
+	    android:textColor="@color/amount"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:text="$4000"
-	    android:layout_below="@+id/txtSchoolName"
+	    android:text="Spent: $4000"
+	    android:layout_below="@+id/txtLocation"
 	    android:layout_toRightOf="@+id/txtBudget"
-	    android:layout_marginLeft="50dp"
-	    android:textColor="#000000"
+	    android:layout_marginLeft="70dp"
         android:textSize="16dp" ></TextView>	
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imgSchool"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
