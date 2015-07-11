@@ -56,7 +56,7 @@ public class LoginActivity extends Activity {
 					// TODO Auto-generated method stub
 					
 					try {
-						Toast.makeText(getApplicationContext(), ""+response.toString(), Toast.LENGTH_SHORT).show();
+						
 						int s =response.getInt("status");
 					if(s!=0){
 						Intent home_activity = new Intent(getApplicationContext(),HomeActivity.class);
