@@ -13,16 +13,14 @@ public class SchoolListAdapter extends BaseAdapter{
 
 	Context context;
 	String[] names;
-	String[] image_links;
 	String[] locations;
 	int[] budgets;
 	int[] spents;
 	
 	private static LayoutInflater inflater=null;
-	public SchoolListAdapter(HomeActivity mainactivity,String[] names,int[] budgets,int[] spents,String[] locations,String[] imagePaths){
+	public SchoolListAdapter(HomeActivity mainactivity,String[] names,int[] budgets,int[] spents,String[] locations){
 		this.context = mainactivity.getBaseContext();
 		this.names = names;
-		this.image_links = imagePaths;
 		this.locations = locations;
 		this.budgets = budgets;
 		this.spents = spents;
