@@ -49,7 +49,7 @@ public class LoginActivity extends Activity {
 			params.put("username", username);
 			params.put("password", password);
 			
-			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"http://ec2-52-74-227-82.ap-southeast-1.compute.amazonaws.com/Android/login.php",params,new Response.Listener<JSONObject>() {
+			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"http://ec2-52-74-227-82.ap-southeast-1.compute.amazonaws.com/ndroid/login.php",params,new Response.Listener<JSONObject>() {
 
 				@Override
 				public void onResponse(JSONObject response) {
