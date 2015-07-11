@@ -53,7 +53,7 @@ public class SchoolListAdapter extends BaseAdapter{
 		TextView txtname;
 		TextView txtlocation;
 		TextView txtbudget;
-		TextView txtspent;
+		TextView txtSchoolSpent;
 		ImageView imageView;
 	}
 	
@@ -66,11 +66,12 @@ public class SchoolListAdapter extends BaseAdapter{
 		h.txtname = (TextView) rootView.findViewById(R.id.txtSchoolName);
 		h.txtlocation = (TextView) rootView.findViewById(R.id.txtLocation);
 		h.txtbudget = (TextView) rootView.findViewById(R.id.txtBudget);
-		h.txtspent = (TextView) rootView.findViewById(R.id.txtSpent);
+		h.txtSchoolSpent = (TextView) rootView.findViewById(R.id.txtSpent);
 		
-		h.txtbudget.setText(budgets[position]);
+		h.txtbudget.setText("budget: "+budgets[position]);
 		h.txtname.setText(names[position]);
 		h.txtlocation.setText(locations[position]);
+		h.txtSchoolSpent.setText("spent: "+spents[position]);
 		//h.imageView.setImageBitmap(bm);
 		
 		rootView.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +84,5 @@ public class SchoolListAdapter extends BaseAdapter{
 		});
 		return rootView;
 	}
-	
-
 	
 }

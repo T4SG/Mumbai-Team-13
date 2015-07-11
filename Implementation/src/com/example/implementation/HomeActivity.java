@@ -38,7 +38,7 @@ public class HomeActivity extends Activity {
         // Third parameter - ID of the TextView to which the data is written
         // Forth - the Array of data
 		
-		SchoolListAdapter adapter = new SchoolListAdapter(this,school_names,image_links,locations,budgets,spents);
+		SchoolListAdapter adapter = new SchoolListAdapter(this,school_names,budgets,spents,locations,image_links);
 		listView.setAdapter(adapter);
 		
 	}
