@@ -47,20 +47,34 @@ public class SchoolListAdapter extends BaseAdapter{
 		return position;
 	}
 
+
+	private class Hold{
+		TextView txtname;
+		TextView txtlocation;
+		TextView txtbudget;
+		TextView txtspent;
+		ImageView imageView;
+	}
+	
 	@Override
-	public View getView(int arg0, View arg1, ViewGroup arg2) {
+	public View getView(int position, View convertView, ViewGroup parent) {
 		// TODO Auto-generated method stub
-		Holder holder = new Holder();
+		
+		View rootView = inflater.inflate(R.layout.school_list_item,null);
+		Hold h = new Hold();
+		h.txtname = (TextView) rootView.findViewById(R.id.txtSchoolName);
+		h.txtlocation = (TextView) rootView.findViewById(R.id.txtLocation);
+		h.txtbudget = (TextView) rootView.findViewById(R.id.txtBudget);
+		h.txtspent = (TextView) rootView.findViewById(R.id.txtSpent);
+		
+		h.txtbudget.setText(budgets[position]);
+		h.txtname.setText(names[position]);
+		h.txtlocation.setText(locations[position]);
+		//h.imageView.setImageBitmap(bm);
+		
 		return null;
 	}
 	
-	class Holder{
-		TextView name;
-		TextView location;
-		TextView budget;
-		TextView spent;
-		ImageView imageView;
-	}
 
 	
 }
