@@ -17,8 +17,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 
 public class LoginActivity extends Activity {
 
@@ -34,11 +36,11 @@ public class LoginActivity extends Activity {
     
     btnSignIn.setOnClickListener(new View.OnClickListener() {
 	
+    	
 		@Override
 		public void onClick(View v) {
 	
-			Intent home_activity = new Intent(getApplicationContext(),HomeActivity.class);
-			startActivity(home_activity);
+			
 			
 			String username = txtUsername.getText().toString();
 			String password = txtPassword.getText().toString();
@@ -46,15 +48,21 @@ public class LoginActivity extends Activity {
 			Map<String,String> params = new HashMap<String,String>();
 			params.put("username", username);
 			params.put("password", password);
-			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"http://10.242.166.118/login.php",params,new Response.Listener<JSONObject>() {
+			
+			CustomRequest jsonRequest = new CustomRequest(Request.Method.POST,"http://ec2-52-74-227-82.ap-southeast-1.compute.amazonaws.com/Android/login.php",params,new Response.Listener<JSONObject>() {
 
 				@Override
 				public void onResponse(JSONObject response) {
 					// TODO Auto-generated method stub
+					
 					try {
+						Toast.makeText(getApplicationContext(), ""+response.toString(), Toast.LENGTH_SHORT).show();
 						int s =response.getInt("status");
 					if(s!=0){
-						Toast.makeText(getApplicationContext(), "Redirect to home",Toast.LENGTH_SHORT).show();
+						Intent home_activity = new Intent(getApplicationContext(),HomeActivity.class);
+						home_activity.putExtra("user_id", response.getString("user_id"));
+						startActivity(home_activity);
+						//Toast.makeText(getApplicationContext(), "Redirect to home",Toast.LENGTH_SHORT).show();
 					}
 						
 					} catch (JSONException e) {
@@ -67,9 +75,11 @@ public class LoginActivity extends Activity {
 				@Override
 				public void onErrorResponse(VolleyError error) {
 					// TODO Auto-generated method stub
-					Toast.makeText(getApplicationContext(), "Login Error",Toast.LENGTH_SHORT).show();
+					Toast.makeText(getApplicationContext(), "Login Error: "+error.getMessage(),Toast.LENGTH_SHORT).show();
 				}
 			});
+			RequestQueue queue = Volley.newRequestQueue(getApplication());
+			queue.add(jsonRequest);
 		}
 	});
         
