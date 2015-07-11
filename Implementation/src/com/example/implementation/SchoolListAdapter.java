@@ -54,7 +54,7 @@ public class SchoolListAdapter extends BaseAdapter{
 		TextView txtlocation;
 		TextView txtbudget;
 		TextView txtSchoolSpent;
-		ImageView imageView;
+		
 	}
 	
 	@Override
@@ -72,7 +72,7 @@ public class SchoolListAdapter extends BaseAdapter{
 		h.txtname.setText(names[position]);
 		h.txtlocation.setText(locations[position]);
 		h.txtSchoolSpent.setText("spent: "+spents[position]);
-		//h.imageView.setImageBitmap(bm);
+		
 		
 		rootView.setOnClickListener(new View.OnClickListener() {
 			

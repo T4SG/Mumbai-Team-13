@@ -3,10 +3,9 @@ int color locationColor 0x7f040000
 int dimen activity_horizontal_margin 0x7f050000
 int dimen activity_vertical_margin 0x7f050001
 int drawable ic_launcher 0x7f020000
-int id action_settings 0x7f09000a
+int id action_settings 0x7f090009
 int id btnSign 0x7f090004
 int id btnSignup 0x7f090003
-int id imgSchool 0x7f090009
 int id lstSchools 0x7f090000
 int id txtBudget 0x7f090007
 int id txtLocation 0x7f090006
