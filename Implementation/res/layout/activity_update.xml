@@ -58,7 +58,7 @@
        
 
         <EditText
-            android:id="@+id/et"
+            android:id="@+id/txt1"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -81,14 +81,15 @@
             android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Reinforced concrete"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et1"
+            android:id="@+id/txt2"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -113,14 +114,15 @@
             android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Finished Walls"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et2"
+            android:id="@+id/txt3"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -143,14 +145,15 @@
             android:id="@+id/tv3"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Finishes Floor"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et3"
+            android:id="@+id/txt4"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -173,14 +176,15 @@
             android:id="@+id/tv4"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Finishes Windows"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et4"
+            android:id="@+id/txt5"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -203,14 +207,15 @@
             android:id="@+id/tv5"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Electrical Work"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et5"
+            android:id="@+id/txt6"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -233,14 +238,15 @@
             android:id="@+id/tv6"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:textSize="15dp"
             android:layout_marginLeft="20dp"
-                 android:text="Site preparation" />
+            android:text="Water Publishing"
+            android:textSize="15dp" />
+
          <!--   android:layout_weight="1"-->
        
 
         <EditText
-            android:id="@+id/et6"
+            android:id="@+id/txt7"
             android:layout_width="60dp"
             android:layout_height="35dp"
           	 android:layout_marginRight="20dp"
@@ -252,5 +258,11 @@
 
         
     </TableRow>
+
+      <Button
+          android:id="@+id/btnSave"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Save" />
       
     </TableLayout>

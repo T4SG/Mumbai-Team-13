@@ -32,16 +32,10 @@ public final class R {
         public static final int rectangle=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001b;
-        public static final int btnSign=0x7f090016;
-        public static final int btnSignup=0x7f090015;
-        public static final int et=0x7f090006;
-        public static final int et1=0x7f090008;
-        public static final int et2=0x7f09000a;
-        public static final int et3=0x7f09000c;
-        public static final int et4=0x7f09000e;
-        public static final int et5=0x7f090010;
-        public static final int et6=0x7f090012;
+        public static final int action_settings=0x7f09001c;
+        public static final int btnSave=0x7f090013;
+        public static final int btnSign=0x7f090017;
+        public static final int btnSignup=0x7f090016;
         public static final int ethead=0x7f090004;
         public static final int lstSchools=0x7f090000;
         public static final int pager=0x7f090001;
@@ -54,12 +48,19 @@ public final class R {
         public static final int tv5=0x7f09000f;
         public static final int tv6=0x7f090011;
         public static final int tvhead=0x7f090003;
-        public static final int txtBudget=0x7f090019;
-        public static final int txtLocation=0x7f090018;
-        public static final int txtPassword=0x7f090014;
-        public static final int txtSchoolName=0x7f090017;
-        public static final int txtSpent=0x7f09001a;
-        public static final int txtUsername=0x7f090013;
+        public static final int txt1=0x7f090006;
+        public static final int txt2=0x7f090008;
+        public static final int txt3=0x7f09000a;
+        public static final int txt4=0x7f09000c;
+        public static final int txt5=0x7f09000e;
+        public static final int txt6=0x7f090010;
+        public static final int txt7=0x7f090012;
+        public static final int txtBudget=0x7f09001a;
+        public static final int txtLocation=0x7f090019;
+        public static final int txtPassword=0x7f090015;
+        public static final int txtSchoolName=0x7f090018;
+        public static final int txtSpent=0x7f09001b;
+        public static final int txtUsername=0x7f090014;
     }
     public static final class layout {
         public static final int activity_home=0x7f030000;
