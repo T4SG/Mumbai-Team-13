@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
 					public void onResponse(JSONObject response) {
 						// TODO Auto-generated method stub
 						try {
-							Toast.makeText(getApplicationContext(), ""+response, Toast.LENGTH_SHORT).show();
+							
 							int i = response.getInt("result");
 						
 							if(i==1)Toast.makeText(getApplicationContext(), "Changes Saved", Toast.LENGTH_SHORT).show();
