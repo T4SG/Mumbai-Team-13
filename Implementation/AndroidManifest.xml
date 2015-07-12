@@ -27,6 +27,18 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
+    	<activity
+            android:name=".Tab1"
+            android:label="Tab1" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="main_activity" >
+        </activity>
+        <activity
+            android:name=".tab2"
+            android:label="tab2" >
+        </activity>
     </application>
 
 </manifest>

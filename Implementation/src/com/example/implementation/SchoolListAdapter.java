@@ -2,6 +2,7 @@ package com.example.implementation;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,7 @@ public class SchoolListAdapter extends BaseAdapter{
 	
 	private static LayoutInflater inflater=null;
 	public SchoolListAdapter(HomeActivity mainactivity,String[] project_id,String[] names,int[] budgets,int[] spents,String[] locations){
-		this.context = mainactivity.getBaseContext();
+		this.context = mainactivity.getApplicationContext();
 		this.names = names;
 		this.locations = locations;
 		this.budgets = budgets;
@@ -84,6 +85,7 @@ public class SchoolListAdapter extends BaseAdapter{
 				// TODO Auto-generated method stub
 				Intent in = new Intent(context, MainActivity.class);
 				in.putExtra("project_id", project_ids[position]);
+				in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				context.startActivity(in);
 			}
 		});
@@ -94,6 +96,7 @@ public class SchoolListAdapter extends BaseAdapter{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(context, tab2.class);
+				intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				context.startActivity(intent);
 			}
 		});
