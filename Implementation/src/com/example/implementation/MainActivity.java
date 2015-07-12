@@ -16,8 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends Activity {
 
@@ -29,12 +31,15 @@ public class MainActivity extends Activity {
         Button btnSave = (Button) findViewById(R.id.btnSave);
         btnSave.setOnClickListener(new View.OnClickListener() {
 			
+        final String pid = getIntent().getExtras().getString("project_id");
+        	
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				String url="";
+				String url="http://ec2-52-74-227-82.ap-southeast-1.compute.amazonaws.com/Android/progress_update.php";
 				
 				Map<String,String> params = new HashMap<String,String>();
+				params.put("project_id", pid);
 				params.put("1",((TextView)findViewById(R.id.txt1)).getText().toString());
 				params.put("2",((TextView)findViewById(R.id.txt2)).getText().toString());
 				params.put("3",((TextView)findViewById(R.id.txt3)).getText().toString());
@@ -69,6 +74,9 @@ public class MainActivity extends Activity {
 						
 					}
 				});
+
+		        RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+		        queue.add(request);
 			}
 		});
     }

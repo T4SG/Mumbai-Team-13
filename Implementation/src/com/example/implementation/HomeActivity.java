@@ -64,7 +64,7 @@ public class HomeActivity extends Activity {
 							project_id[i] = schools.getJSONObject(i).getString("project_id");
 						}
 								
-						SchoolListAdapter adapter = new SchoolListAdapter(homeActivity, school_names,budgets, budget_consumed, locations);
+						SchoolListAdapter adapter = new SchoolListAdapter(homeActivity,project_id, school_names,budgets, budget_consumed, locations);
 						listView.setAdapter(adapter);
 					}
 					catch(Exception e){

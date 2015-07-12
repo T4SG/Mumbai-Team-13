@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:paddingLeft="20dp"
-    android:paddingTop="10dp"
-    android:paddingRight="20dp"    
+    android:paddingLeft="5dp"    
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
@@ -12,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
+        android:layout_marginLeft="10dp"
         android:textColor="#000000"
         android:textSize="24dp" />
 	
@@ -19,6 +18,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="Mumbai"
+	    android:layout_marginLeft="10dp"
 	    android:textColor="@color/locationColor"
 	    android:layout_below="@+id/txtSchoolName"/>
 	
@@ -29,6 +29,7 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:text="Budget: $24000"
+	    
 	    android:layout_below="@+id/txtLocation"
         android:textSize="16dp" ></TextView>
 	
@@ -41,7 +42,30 @@
 	    android:text="Spent: $4000"
 	    android:layout_below="@+id/txtLocation"
 	    android:layout_toRightOf="@+id/txtBudget"
-	    android:layout_marginLeft="70dp"
+	    android:layout_marginLeft="10dp"
         android:textSize="16dp" ></TextView>
 
+		<Button
+		    android:layout_marginTop="5dp"
+		    android:id="@+id/btnUpdate"
+		    android:layout_marginRight="5dp"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentTop="true"
+		    android:background="#90a4ae"
+		    android:text="Update" />
+		
+		<Button
+		    android:layout_marginTop="5dp"
+		    android:layout_marginRight="5dp"
+		    android:id="@+id/btnImage"
+		    android:background="#90a4ae"
+		    style="?android:attr/buttonStyleSmall"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@+id/btnUpdate"
+		    android:text="Iamges" />
 </RelativeLayout>
